@@ -3,20 +3,31 @@ img{
     height: 400px;
     border-radius: 15px;
 }
+.icono{
+    height: 20px;
+    width: 20px;
+    
+}
 div{
     padding: 15px;
     
 }
 .card {
     border-radius: 30px;
-    background-color: rgb(255, 223, 153);
-    border-color: black;
+    /*background-color: rgb(240, 239, 239);*/
+    border-color: rgb(139, 139, 139);
     border-width: 3px;
+    background: linear-gradient(rgba(240,239,239,0.75),rgba(240,239,239,0.75));
 }
 
 body{
-    /*background-color: maroon;*/
-    background: radial-gradient(rgb(255, 208, 0), rgb(255, 115, 0), rgb(109, 3, 109))  ;
+    margin: 0;
+    padding: 0;
+    background: url(fondo.jpg);   
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+
 }
 
 .perfil{
@@ -28,3 +39,4 @@ body{
     margin-block-start: -5% ;
 
 }
+
