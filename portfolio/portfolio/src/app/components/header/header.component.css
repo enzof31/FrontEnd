@@ -1,3 +1,12 @@
 div {
-    background-color: cornflowerblue;
+    /*background-color: rgb(100, 125, 237);*/
+    background-color: rgb(95, 95, 95);
+    opacity: 1;
+    position: relative;
+    
+}
+
+app-red-sociales-img {
+    float: right;
+    margin-top: 25px;
 }
