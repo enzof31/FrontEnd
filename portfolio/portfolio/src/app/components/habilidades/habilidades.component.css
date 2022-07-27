@@ -1,0 +1,20 @@
+ .progress{
+    background: #ababab;
+    width: 60%; 
+    margin-right: 100%;
+} 
+
+
+div {
+    color:rgb(216, 214, 214);
+}
+
+.list{
+    padding-left: 20%;
+}
+
+.row{
+    padding-left: 20px;
+}
+
+/* rgb(216, 214, 214) */
