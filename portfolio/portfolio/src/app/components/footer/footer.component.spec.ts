@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RedSocialesImgComponent } from './red-sociales-img.component';
+import { FooterComponent } from './footer.component';
 
-describe('RedSocialesImgComponent', () => {
-  let component: RedSocialesImgComponent;
-  let fixture: ComponentFixture<RedSocialesImgComponent>;
+describe('FooterComponent', () => {
+  let component: FooterComponent;
+  let fixture: ComponentFixture<FooterComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ RedSocialesImgComponent ]
+      declarations: [ FooterComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(RedSocialesImgComponent);
+    fixture = TestBed.createComponent(FooterComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

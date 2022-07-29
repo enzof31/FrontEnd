@@ -1,21 +1,21 @@
 /* Formato de letras */
-div {
-    
+.acerca {
+    padding-left: 20px;
     color:rgb(216, 214, 214);
 }
-
-/* Formato de la foto de perfil */
-.perfil{
-    border-radius: 35%;
-    display: block;
-    margin-block-start: -40% ;
+/* formato foto de perfil */
+.container{
+    margin-top: -10%;  
 }
 
-/* Formato del contendor de la foto de perfil */
-.row{
-    display: flex;
- justify-content: center;
-}
+
+@media screen and (max-width: 575px) {
+    .container{ 
+        margin-top: -40px;
+        max-width: 170px;       
+        height:auto;
+    }
+} 
 
 /* Formato del Nombre */
 #name{
@@ -34,4 +34,8 @@ div {
     font-size: 30px;
     text-align: center;
     color: snow;
+}
+
+p{
+    text-align: center;
 }

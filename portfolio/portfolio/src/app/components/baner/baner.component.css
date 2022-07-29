@@ -1,11 +1,21 @@
 img {
-    width: 75%;
+    width: 90%;
     height: 400px;
     border-radius: 15px;
+    margin-top: 20px;
     
 }
 
-.parent {
-    text-align: center;
+.row {
+    display: flex;
+    justify-content:center;
+
     
 }
+
+@media screen and (max-width: 700px) {
+    img{ 
+        width: 95%;
+        height: auto;
+    }
+} 

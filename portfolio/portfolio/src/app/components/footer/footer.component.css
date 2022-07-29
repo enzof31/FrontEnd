@@ -1,0 +1,16 @@
+div {
+    color: #ffffff;
+    background-color: #000000;
+    opacity: .85;
+    flood-opacity: 0.4;
+    position: relative;
+    padding-left: 20px;
+}
+
+footer{
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* rgb(216, 214, 214) --rgb(95, 95, 95)*/
