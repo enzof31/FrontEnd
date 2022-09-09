@@ -11,7 +11,8 @@
         <a href=""><img src="../../../assets/twitter.png" alt="twitter.png" id="twitter"></a>
         <a href=""><img src="../../../assets/instagram.png" alt="instagram.png" id="instagram"></a>
         <a href=""><img src="../../../assets/facebook.png" alt="facebook.png" id="facebook"></a>
-        <button type="button" class="btn btn-outline-dark" id="login">LogIn</button>
+        <a href="/login"><button type="button" class="btn btn-outline-dark" id="login" (click)="login()" *ngIf="!isLogged">LogIn</button></a>
+        <a href="#"><button type="button" class="btn btn-outline-dark" id="login" (click)="onLogout()"*ngIf="isLogged">LogOut</button></a>
     </div>
         
     </div>
