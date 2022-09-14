@@ -6,26 +6,25 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-
 @Entity
-public class ExperienciaLab {
+public class Educacion {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String nombreE;
     private String descripcionE;
-    
-    //creo los constructores
 
-    public ExperienciaLab() {
+//creo los constructores
+
+    public Educacion() {
     }
 
-    public ExperienciaLab(String nombreE, String descripcionE) {
+    public Educacion(String nombreE, String descripcionE) {
         this.nombreE = nombreE;
         this.descripcionE = descripcionE;
     }
-    
-    //creo los getters and setters
+
+   //creo los getters and setters
 
     public int getId() {
         return id;
@@ -50,5 +49,7 @@ public class ExperienciaLab {
     public void setDescripcionE(String descripcionE) {
         this.descripcionE = descripcionE;
     }
+    
+    
     
 }
