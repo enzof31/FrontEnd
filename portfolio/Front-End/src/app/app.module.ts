@@ -16,12 +16,14 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { interceptorPorvider } from './service/interceptor-service';
 import { NuevaExperienciaComponent } from './components/experiencia/nueva-experiencia.component';
 import { EditarExperienciaComponent } from './components/experiencia/editar-experiencia.component';
 import { NuevaEducacionComponent } from './components/educacion/nueva-educacion.component';
 import { EditarEducacionComponent } from './components/educacion/editar-educacion.component';
+import { EditHabilidadesComponent } from './components/habilidades/edit-habilidades.component';
+import { NuevaHabilidadComponent } from './components/habilidades/nueva-habilidad.component';
 
 @NgModule({
   declarations: [
@@ -40,14 +42,17 @@ import { EditarEducacionComponent } from './components/educacion/editar-educacio
     NuevaExperienciaComponent,
     EditarExperienciaComponent,
     NuevaEducacionComponent,
-    EditarEducacionComponent
+    EditarEducacionComponent,
+    EditHabilidadesComponent,
+    NuevaHabilidadComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgCircleProgressModule.forRoot({}),
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     interceptorPorvider

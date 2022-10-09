@@ -6,7 +6,7 @@ import { ServEducacionService } from 'src/app/service/serv-educacion.service';
 @Component({
   selector: 'app-editar-educacion',
   templateUrl: './editar-educacion.component.html',
-  styleUrls: ['./editar-educacion.component.scss']
+  styleUrls: ['./editar-educacion.component.css']
 })
 export class EditarEducacionComponent implements OnInit {
   educacion: Educacion = null;

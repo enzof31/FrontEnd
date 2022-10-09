@@ -1,3 +1,5 @@
+ 
+ 
  .progress{
     background: #ababab;
     width: 60%; 
@@ -31,3 +33,13 @@ div {
     
 }
 
+.titulo{
+    align-items: center;
+    display:flex;
+}
+
+.caja{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

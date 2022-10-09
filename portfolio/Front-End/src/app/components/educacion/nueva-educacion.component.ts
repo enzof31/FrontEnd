@@ -6,7 +6,7 @@ import { ServEducacionService } from 'src/app/service/serv-educacion.service';
 @Component({
   selector: 'app-nueva-educacion',
   templateUrl: './nueva-educacion.component.html',
-  styleUrls: ['./nueva-educacion.component.scss']
+  styleUrls: ['./nueva-educacion.component.css']
 })
 export class NuevaEducacionComponent implements OnInit {
     nombreE: string;
