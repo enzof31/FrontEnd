@@ -8,7 +8,7 @@ import { Educacion } from '../Model/educacion';
   providedIn: 'root'
 })
 export class ServEducacionService {
-  //URL = 'http://localhost:8080/educacion/';
+  
   URL = environment.URL +'educacion/';
   
   constructor(private httpClient: HttpClient) { }

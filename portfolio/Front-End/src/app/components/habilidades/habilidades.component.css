@@ -1,5 +1,3 @@
- 
- 
  .progress{
     background: #ababab;
     width: 60%; 
@@ -22,7 +20,6 @@ div {
     justify-content: center;
 }
 
-/* rgb(216, 214, 214) */
 .container{ 
     padding-left: 20px;
     max-width: 1000px;
@@ -30,8 +27,6 @@ div {
     grid-template-columns: repeat(auto-fill,250px);
     grid-template-rows: auto ;
     justify-content:center;    
-    
-    
 }
 
 .titulo{

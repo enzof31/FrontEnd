@@ -32,5 +32,5 @@ export class NuevaHabilidadComponent implements OnInit {
     } 
     )
   }
-  //checked = false;
+ 
 }

@@ -1,9 +1,9 @@
 <div class="fondo" *ngIf="educacion">
-    <div class="row">
-      <div>
-        <section class="form-register">
-          <h4>Formulario de edición de estudios</h4>
-          <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+  <div class="row">
+    <div>
+      <section class="form-register">
+        <h4>Formulario de edición de estudios</h4>
+        <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
           <div class="form-group">
             <label for="nombreE"> Título </label>
             <input
@@ -37,11 +37,10 @@
               required
             />
           </div>
-          <br>
+          <br />
           <button class="btn btn-primary">Actualizar Educación</button>
-          </form>
+        </form>
       </section>
-      </div>
     </div>
   </div>
-  
+</div>

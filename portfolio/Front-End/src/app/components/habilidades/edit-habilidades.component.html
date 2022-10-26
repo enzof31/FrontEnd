@@ -1,9 +1,9 @@
 <div class="fondo" *ngIf="skillHS">
-    <div class="row">
-      <div>
-        <section class="form-register">
-          <h4>Formulario de edición de habilidades</h4>
-          <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+  <div class="row">
+    <div>
+      <section class="form-register">
+        <h4>Formulario de edición de habilidades</h4>
+        <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
           <div class="form-group">
             <label for="nombre"> Nombre de la habilidad</label>
             <input
@@ -29,16 +29,18 @@
           <button class="btn btn-primary">Actualizar habilidad</button>
           <div>
             <section>
-              <label><input  type="checkbox" 
-                 
-                id="circulo"
-                name="circulo"
-                [(ngModel)]="skillHS.circulo" 
-                >Circulo</label>
+              <label
+                ><input
+                  type="checkbox"
+                  id="circulo"
+                  name="circulo"
+                  [(ngModel)]="skillHS.circulo"
+                />Circulo</label
+              >
             </section>
           </div>
-          </form>
-        </section>
-      </div>
+        </form>
+      </section>
     </div>
   </div>
+</div>

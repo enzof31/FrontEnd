@@ -24,12 +24,12 @@ proyecto: Proyecto[] = [];
     }
   }
 
-cargarProyecto(): void {
+  cargarProyecto(): void {
   this.proyectoServ.lista().subscribe(
     data=> {this.proyecto= data;}
   )
-}
-delete(id?: number){
+  }
+  delete(id?: number){
   if(id != undefined){
     this.proyectoServ.delete(id).subscribe(
       data=> {
@@ -39,5 +39,5 @@ delete(id?: number){
       }
       )
   }
-}
+  }
 }
