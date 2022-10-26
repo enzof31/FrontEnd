@@ -1,4 +1,4 @@
-div {
+div, .table {
     color:rgb(216, 214, 214);
 }
 
@@ -8,8 +8,10 @@ div {
 
 h3, h5 {
     display: inline;
+    
 }
 
 .list{
     padding-left: 20%;
+    
 }

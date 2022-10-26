@@ -2,39 +2,45 @@
 package com.portfolio.enzo.Service;
 
 import com.portfolio.enzo.Entity.Persona;
-import com.portfolio.enzo.Interface.IntPersonaService;
 import com.portfolio.enzo.Repository.IntPersonaRepository;
 import java.util.List;
+import java.util.Optional;
+import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class ImplementPersonaService implements IntPersonaService  {
+@Transactional
+public class ImplementPersonaService  {
     
     @Autowired
     IntPersonaRepository intPersonaRepository;
-
-    @Override
-    public List<Persona> verPersona() {
-        List<Persona> persona = intPersonaRepository.findAll();
-        return persona;
+ 
+    public List<Persona> list(){
+        return intPersonaRepository.findAll();
     }
-
-    @Override
-    public void crearPersona(Persona persona) {
+    
+    public  Optional<Persona> getOne(int id){
+        return intPersonaRepository.findById(id);
+    }
+    
+    public Optional<Persona> getByNombre(String nombre){
+        return intPersonaRepository.findByNombre(nombre);
+    }
+    
+    public void save (Persona persona){
         intPersonaRepository.save(persona);
     }
-
-    @Override
-    public void borrarPersona(Long id) {
+    
+    public void delete(int id){
         intPersonaRepository.deleteById(id);
     }
-
-    @Override
-    public Persona buscarPersona(Long id) {
-        Persona persona = intPersonaRepository.findById(id).orElse(null);
-        return persona;
+    
+    public boolean  existById(int id){
+        return intPersonaRepository.existsById(id);
     }
-
-   
+    public boolean existByNombre(String nombre){
+        return intPersonaRepository.existsByNombre(nombre);
+    }
+            
 }

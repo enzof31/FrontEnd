@@ -21,8 +21,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("explab")
-@CrossOrigin(origins = "http://localhost:4200")
+@RequestMapping("/explab")
+//cuando haga el deploy, pongo coma despues de la comilla y entre  comillas coloco el link de la pagina
+@CrossOrigin(origins = {"http://localhost:4200/","https://frontendenzo.web.app"})
 public class ContExperiencia {
     @Autowired
     ServExperiencia servExperiencia;
@@ -48,7 +49,7 @@ public class ContExperiencia {
         if(servExperiencia.existByNombreE(dtoexp.getNombreE()))
             return new ResponseEntity(new Mensaje ("Esa experiencia existe"), HttpStatus.BAD_REQUEST);
         
-        ExperienciaLab experiencia = new ExperienciaLab(dtoexp.getNombreE(), dtoexp.getDescripcionE());
+        ExperienciaLab experiencia = new ExperienciaLab(dtoexp.getNombreE(), dtoexp.getDescripcionE(), dtoexp.getFechaE());
         servExperiencia.save(experiencia);
         
         return new ResponseEntity(new Mensaje("Experiencia agregada"), HttpStatus.OK);
@@ -69,6 +70,7 @@ public class ContExperiencia {
         ExperienciaLab experiencia = servExperiencia.getOne(id).get();
         experiencia.setNombreE(dtoexp.getNombreE());
         experiencia.setDescripcionE(dtoexp.getDescripcionE());
+        experiencia.setFechaE(dtoexp.getFechaE());
         
         servExperiencia.save(experiencia);
         return new ResponseEntity(new Mensaje("Experiencia actualizada"), HttpStatus.OK);

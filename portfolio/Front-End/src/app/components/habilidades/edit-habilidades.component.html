@@ -1,7 +1,9 @@
-<div class="container" *ngIf="skillHS">
+<div class="fondo" *ngIf="skillHS">
     <div class="row">
       <div>
-        <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+        <section class="form-register">
+          <h4>Formulario de edición de habilidades</h4>
+          <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
           <div class="form-group">
             <label for="nombre"> Nombre de la habilidad</label>
             <input
@@ -35,7 +37,8 @@
                 >Circulo</label>
             </section>
           </div>
-        </form>
+          </form>
+        </section>
       </div>
     </div>
   </div>

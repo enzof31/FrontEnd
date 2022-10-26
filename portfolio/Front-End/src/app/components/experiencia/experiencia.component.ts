@@ -10,7 +10,8 @@ import { TokenService } from 'src/app/service/token.service';
 })
 export class ExperienciaComponent implements OnInit {
   expe: Experiencia[] = [];
-  constructor(private servExperiencia: ServExperienciaService, private tokenService: TokenService) { }
+  constructor(private servExperiencia: ServExperienciaService, 
+    private tokenService: TokenService) { }
 
   isLogged = false;
 
@@ -34,9 +35,7 @@ export class ExperienciaComponent implements OnInit {
           this.cargarExperiencia();
         }, err =>{
           alert("No se puedo borrar la experiencia");
-        }
-
-        
+        }       
         )
     }
   }

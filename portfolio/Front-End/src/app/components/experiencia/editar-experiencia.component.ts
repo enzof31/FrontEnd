@@ -10,8 +10,9 @@ import { ServExperienciaService } from 'src/app/service/serv-experiencia.service
 })
 export class EditarExperienciaComponent implements OnInit {
   expLab: Experiencia = null;
-  constructor(private servExperiencia: ServExperienciaService, private activatedRouter: ActivatedRoute,
-  private router: Router) { }
+  constructor(private servExperiencia: ServExperienciaService,
+     private activatedRouter: ActivatedRoute,
+     private router: Router) { }
 
   ngOnInit(): void {
     const id = this.activatedRouter.snapshot.params['id'];

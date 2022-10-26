@@ -6,6 +6,7 @@
     margin-right: 100%;
 } 
 
+.general:empty{display:none;}
 
 div {
     color:rgb(216, 214, 214);

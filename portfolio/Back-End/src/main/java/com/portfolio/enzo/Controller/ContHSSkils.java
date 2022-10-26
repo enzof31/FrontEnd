@@ -22,7 +22,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+//cuando haga el deploy, pongo coma despues de la comilla y entre  comillas coloco el link de la pagina
+@CrossOrigin(origins = {"http://localhost:4200/","https://frontendenzo.web.app"})
 @RequestMapping("/skill")
 public class ContHSSkils {
     @Autowired

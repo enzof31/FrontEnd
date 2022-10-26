@@ -6,6 +6,12 @@
 /* formato foto de perfil */
 .container{
     margin-top: -10%;  
+       
+}
+
+.perfil{
+    max-height: 250px;
+    max-width: auto;
 }
 
 

@@ -24,6 +24,12 @@ import { NuevaEducacionComponent } from './components/educacion/nueva-educacion.
 import { EditarEducacionComponent } from './components/educacion/editar-educacion.component';
 import { EditHabilidadesComponent } from './components/habilidades/edit-habilidades.component';
 import { NuevaHabilidadComponent } from './components/habilidades/nueva-habilidad.component';
+import { EditAcercadeComponent } from './components/acerca/edit-acercade.component';
+import { NuevoproyectoComponent } from './components/proyectos/nuevoproyecto.component';
+import { EditarproyectoComponent } from './components/proyectos/editarproyecto.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideStorage,getStorage } from '@angular/fire/storage';
 
 @NgModule({
   declarations: [
@@ -44,7 +50,10 @@ import { NuevaHabilidadComponent } from './components/habilidades/nueva-habilida
     NuevaEducacionComponent,
     EditarEducacionComponent,
     EditHabilidadesComponent,
-    NuevaHabilidadComponent
+    NuevaHabilidadComponent,
+    EditAcercadeComponent,
+    NuevoproyectoComponent,
+    EditarproyectoComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +61,9 @@ import { NuevaHabilidadComponent } from './components/habilidades/nueva-habilida
     NgCircleProgressModule.forRoot({}),
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage())
   ],
   providers: [
     interceptorPorvider

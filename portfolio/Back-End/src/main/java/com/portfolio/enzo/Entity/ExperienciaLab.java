@@ -14,15 +14,17 @@ public class ExperienciaLab {
     private int id;
     private String nombreE;
     private String descripcionE;
+    private String fechaE;
     
     //creo los constructores
 
     public ExperienciaLab() {
     }
 
-    public ExperienciaLab(String nombreE, String descripcionE) {
+    public ExperienciaLab(String nombreE, String descripcionE, String fechaE) {
         this.nombreE = nombreE;
         this.descripcionE = descripcionE;
+        this.fechaE = fechaE;
     }
     
     //creo los getters and setters
@@ -49,6 +51,14 @@ public class ExperienciaLab {
 
     public void setDescripcionE(String descripcionE) {
         this.descripcionE = descripcionE;
+    }
+
+    public String getFechaE() {
+        return fechaE;
+    }
+
+    public void setFechaE(String fechaE) {
+        this.fechaE = fechaE;
     }
     
 }

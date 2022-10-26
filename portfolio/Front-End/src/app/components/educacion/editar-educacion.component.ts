@@ -16,7 +16,7 @@ export class EditarEducacionComponent implements OnInit {
 
   ngOnInit(): void {
     const id = this.activatedRouter.snapshot.params['id'];
-    this.eduServ.details(id).subscribe(
+    this.eduServ.detail(id).subscribe(
       data=> {
         this.educacion = data;
       }, err =>{

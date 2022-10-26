@@ -22,7 +22,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/educacion")
-@CrossOrigin(origins = "http://localhost:4200")
+//cuando haga el deploy, pongo coma despues de la comilla y entre  comillas coloco el link de la pagina
+@CrossOrigin(origins = {"http://localhost:4200/", "https://frontendenzo.web.app"})
 public class ContEducacion {
     @Autowired
     ServEducacion servEducacion;
@@ -62,7 +63,7 @@ public class ContEducacion {
     
         
         Educacion educacion = new Educacion (
-        dtoeducacion.getNombreE(), dtoeducacion.getDescripcionE()
+        dtoeducacion.getNombreE(), dtoeducacion.getDescripcionE(), dtoeducacion.getFechaE()
     );
     servEducacion.save(educacion);
     return new ResponseEntity(new Mensaje("Educaicion Creada"), HttpStatus.OK);
@@ -76,12 +77,14 @@ public class ContEducacion {
     if(servEducacion.existByNombreE(dtoeducacion.getNombreE()) && servEducacion.getByNombre(dtoeducacion.getNombreE()).get().getId() !=id){
         return new ResponseEntity(new Mensaje("Ese nombre ya existe"), HttpStatus.BAD_REQUEST);
     }
+    
     if(StringUtils.isAllBlank(dtoeducacion.getNombreE())){
         return new ResponseEntity(new Mensaje("El campo no puede estar vacion"), HttpStatus.BAD_REQUEST);
     }
     Educacion educacion = servEducacion.getOne(id).get();
     educacion.setNombreE(dtoeducacion.getNombreE());
     educacion.setDescripcionE(dtoeducacion.getDescripcionE());
+    educacion.setFechaE(dtoeducacion.getFechaE());
     
     servEducacion.save(educacion);
     return new ResponseEntity(new Mensaje("EducacionActualizada"), HttpStatus.OK);

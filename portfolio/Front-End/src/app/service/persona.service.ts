@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment';
 import { persona } from '../Model/persona.model';
 
 
@@ -8,11 +9,29 @@ import { persona } from '../Model/persona.model';
   providedIn: 'root'
 })
 export class PersonaService {
-  URL = 'http://localhost:8080/persona/';
+  //URL = 'http://localhost:8080/personas/';
+  URL = environment.URL +'personas/';
+  constructor(private httpClient: HttpClient) { }
 
-  constructor(private http: HttpClient) { }
+ 
 
-  public verPersona(): Observable<persona>{
-    return this.http.get<persona>(this.URL+'traer/perfil');
+  public lista(): Observable<persona[]>{
+    return this.httpClient.get<persona[]>(this.URL + 'lista');
   }
+
+  public detail(id: number): Observable<persona>{
+    return this.httpClient.get<persona>(this.URL + `detail/${id}`);
+  }
+/*
+  public save(Persona: persona): Observable<any>{
+    return this.httpClient.post<any>(this.URL + 'create', Persona);
+  }*/
+
+  public update(id: number, Persona: persona): Observable<any>{
+    return this.httpClient.put<any>(this.URL + `update/${id}`, Persona);
+  }
+/*
+  public delete(id: number): Observable<any>{
+    return this.httpClient.delete<any>(this.URL + `delete/${id}`);
+  }*/
 }

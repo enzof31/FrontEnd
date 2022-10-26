@@ -1,8 +1,8 @@
 <div class="row">
   <div class="container text-center  col-sm-4 col-md-4 col-lg-4">
-    <div clase="perro ">
+    <div>
     <img
-      src="../../../assets/perfilenzo1.jpg"
+      src={{persona?.img}}
       alt="Img. de Perfil"
       class="img-fluid perfil"
       style="border-radius: 35%;"
@@ -12,7 +12,7 @@
 </div>
 <div class="row">
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-  <p id="name">{{persona.nombre}} {{persona.apellido}}</p>
+  <p id="name">{{persona?.nombre}} {{persona?.apellido}}</p>
   <p id="titulo">FULL STACK DEVELOPER JR.</p>
 </div>
 </div>
@@ -20,8 +20,18 @@
 <div class="row acerca">
   <h2>Acerca de mi:</h2>
   <p>
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia corrupti
-    nam ut, deserunt obcaecati optio dicta a, incidunt nostrum, in labore
-    voluptates sed ducimus earum error debitis sint quam! Dolore.
+    {{persona?.descripcion}}
   </p>
 </div>
+<div class="col-lg-2" style="
+padding-left: 20px;">
+  <button
+    type="button"
+    class="btn btn-dark"
+    routerLink="/editarAcercade/1"
+    *ngIf="isLogged"
+  >
+    Editar Perfil
+  </button>
+
+</div><br>
