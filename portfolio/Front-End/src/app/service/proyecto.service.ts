@@ -12,7 +12,7 @@ export class ProyectoService {
   //URL: "http://localhost:8080/", 
   //URL: "https://backendenzo.herokuapp.com/"
 
-  URL = "https://backendenzo.herokuapp.com/proyectos/";
+  URL = "http://localhost:8080/proyectos/";
   constructor(private httpClient: HttpClient) { }
 
   public lista(): Observable<Proyecto[]>{

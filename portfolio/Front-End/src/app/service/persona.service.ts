@@ -13,7 +13,7 @@ export class PersonaService {
   //URL: "http://localhost:8080/", 
   //URL: "https://backendenzo.herokuapp.com/"
 
-  URL = "https://backendenzo.herokuapp.com/personas/";
+  URL = "http://localhost:8080/personas/";
   constructor(private httpClient: HttpClient) { }
 
   public lista(): Observable<persona[]>{

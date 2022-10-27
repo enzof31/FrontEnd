@@ -12,7 +12,7 @@ export class SkillService {
   //URL: "http://localhost:8080/", 
   //URL: "https://backendenzo.herokuapp.com/"
   
-  URL = "https://backendenzo.herokuapp.com/skill/";
+  URL = "http://localhost:8080/skill/";
   constructor( private httpClient: HttpClient) { }
 
   public lista(): Observable<Skill[]>{

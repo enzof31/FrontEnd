@@ -12,7 +12,7 @@ export class ServEducacionService {
   //URL: "http://localhost:8080/", 
   //URL: "https://backendenzo.herokuapp.com/"
 
-  URL = "https://backendenzo.herokuapp.com/educacion/";
+  URL = "http://localhost:8080/educacion/";
   
   constructor(private httpClient: HttpClient) { }
 

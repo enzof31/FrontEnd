@@ -12,7 +12,7 @@ export class ServExperienciaService {
   //URL: "http://localhost:8080/", 
   //URL: "https://backendenzo.herokuapp.com/"
 
-  URL = "https://backendenzo.herokuapp.com/explab/";
+  URL = "http://localhost:8080/explab/";
   constructor(private httpClient: HttpClient) { }
 
   public lista(): Observable<Experiencia[]>{
