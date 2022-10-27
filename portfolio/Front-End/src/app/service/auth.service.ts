@@ -11,7 +11,10 @@ import { NuevoUsuario } from '../Model/nuevo-usuario';
 })
 export class AuthService {
   
-  URL = environment.URL +'auth/';
+  //URL: "http://localhost:8080/", 
+  //URL: "https://backendenzo.herokuapp.com/"
+
+  URL = "https://backendenzo.herokuapp.com/auth/";
   constructor(private httpClient: HttpClient) { }
 
   public nuevo(nuevoUsuario: NuevoUsuario): Observable<any>{

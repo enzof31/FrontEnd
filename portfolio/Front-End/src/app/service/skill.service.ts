@@ -9,7 +9,10 @@ import { Skill } from '../Model/skill';
 })
 export class SkillService {
   
-  URL = environment.URL +'skill/';
+  //URL: "http://localhost:8080/", 
+  //URL: "https://backendenzo.herokuapp.com/"
+  
+  URL = "https://backendenzo.herokuapp.com/skill/";
   constructor( private httpClient: HttpClient) { }
 
   public lista(): Observable<Skill[]>{

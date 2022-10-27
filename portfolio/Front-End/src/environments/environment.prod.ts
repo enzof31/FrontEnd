@@ -7,6 +7,8 @@ export const environment = {
     apiKey: 'AIzaSyDF1AClNCH2EWaGYHkk8hJj6SlB9W1-DIY',
     authDomain: 'frontendenzo.firebaseapp.com',
     messagingSenderId: '882168423681',
+    
   },
   production: true
+
 };

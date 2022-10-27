@@ -31,7 +31,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/auth")
 //cuando haga el deploy, pongo coma despues de la comilla y entre  comillas coloco el link de la pagina
-@CrossOrigin(origins = {"http://localhost:4200/","https://frontendenzo.web.app"})
+@CrossOrigin(origins = {"http://localhost:4200/","https://frontendenzo.web.app/"})
 public class AuthController {
 
     @Autowired

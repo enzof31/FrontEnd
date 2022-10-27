@@ -10,10 +10,11 @@ import { persona } from '../Model/persona.model';
 })
 export class PersonaService {
   
-  URL = environment.URL +'personas/';
-  constructor(private httpClient: HttpClient) { }
+  //URL: "http://localhost:8080/", 
+  //URL: "https://backendenzo.herokuapp.com/"
 
- 
+  URL = "https://backendenzo.herokuapp.com/personas/";
+  constructor(private httpClient: HttpClient) { }
 
   public lista(): Observable<persona[]>{
     return this.httpClient.get<persona[]>(this.URL + 'lista');

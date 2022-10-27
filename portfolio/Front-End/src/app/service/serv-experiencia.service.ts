@@ -9,7 +9,10 @@ import { Experiencia } from '../Model/experiencia';
 })
 export class ServExperienciaService {
   
-  URL = environment.URL +'explab/';
+  //URL: "http://localhost:8080/", 
+  //URL: "https://backendenzo.herokuapp.com/"
+
+  URL = "https://backendenzo.herokuapp.com/explab/";
   constructor(private httpClient: HttpClient) { }
 
   public lista(): Observable<Experiencia[]>{

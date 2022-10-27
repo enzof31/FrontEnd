@@ -11,10 +11,11 @@ export const environment = {
     apiKey: 'AIzaSyDF1AClNCH2EWaGYHkk8hJj6SlB9W1-DIY',
     authDomain: 'frontendenzo.firebaseapp.com',
     messagingSenderId: '882168423681',
+    
   },
   production: false,
 
-  URL: "http://localhost:8080/", 
+  //URL: "http://localhost:8080/", 
   //URL: "https://backendenzo.herokuapp.com/"
 };
 
