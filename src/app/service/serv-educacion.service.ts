@@ -10,9 +10,9 @@ import { Educacion } from '../Model/educacion';
 export class ServEducacionService {
   
   //URL: "http://localhost:8080/", 
-  //URL: "https://backendenzo.herokuapp.com/"
+  //URL: "http://backend-production-1d85.up.railway.app/"
 
-  URL = "http://localhost:8080/educacion/";
+  URL = "http://backend-production-1d85.up.railway.app/educacion/";
   
   constructor(private httpClient: HttpClient) { }
 

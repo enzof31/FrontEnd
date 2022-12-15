@@ -10,9 +10,9 @@ import { Skill } from '../Model/skill';
 export class SkillService {
   
   //URL: "http://localhost:8080/", 
-  //URL: "https://backendenzo.herokuapp.com/"
+  //URL: "http://backend-production-1d85.up.railway.app/"
   
-  URL = "http://localhost:8080/skill/";
+  URL = "http://backend-production-1d85.up.railway.app/skill/";
   constructor( private httpClient: HttpClient) { }
 
   public lista(): Observable<Skill[]>{

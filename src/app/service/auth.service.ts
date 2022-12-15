@@ -12,9 +12,9 @@ import { NuevoUsuario } from '../Model/nuevo-usuario';
 export class AuthService {
   
   //URL: "http://localhost:8080/", 
-  //URL: "https://backendenzo.herokuapp.com/"
+  //URL: "http://backend-production-1d85.up.railway.app/"
 
-  URL = "http://localhost:8080/auth/";
+  URL = "http://backend-production-1d85.up.railway.app/auth/";
   constructor(private httpClient: HttpClient) { }
 
   public nuevo(nuevoUsuario: NuevoUsuario): Observable<any>{
