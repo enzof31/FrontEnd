@@ -13,7 +13,7 @@ export class PersonaService {
   //URL: "http://localhost:8080/", 
   //URL: "http://backend-production-1d85.up.railway.app/"
 
-  URL = "http://backend-production-1d85.up.railway.app/personas/";
+  URL = "https://backend-production-1d85.up.railway.app/personas/";
   constructor(private httpClient: HttpClient) { }
 
   public lista(): Observable<persona[]>{

@@ -14,7 +14,7 @@ export class AuthService {
   //URL: "http://localhost:8080/", 
   //URL: "http://backend-production-1d85.up.railway.app/"
 
-  URL = "http://backend-production-1d85.up.railway.app/auth/";
+  URL = "https://backend-production-1d85.up.railway.app/auth/";
   constructor(private httpClient: HttpClient) { }
 
   public nuevo(nuevoUsuario: NuevoUsuario): Observable<any>{

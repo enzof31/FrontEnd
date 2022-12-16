@@ -12,7 +12,7 @@ export class ProyectoService {
   //URL: "http://localhost:8080/", 
   //URL: "http://backend-production-1d85.up.railway.app/"
 
-  URL = "http://backend-production-1d85.up.railway.app/proyectos/";
+  URL = "https://backend-production-1d85.up.railway.app/proyectos/";
   constructor(private httpClient: HttpClient) { }
 
   public lista(): Observable<Proyecto[]>{
