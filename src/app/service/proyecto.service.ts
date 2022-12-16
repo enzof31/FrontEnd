@@ -10,7 +10,7 @@ import { Proyecto } from '../Model/proyecto';
 export class ProyectoService {
   
   //URL: "http://localhost:8080/", 
-  //URL: "http://backend-production-1d85.up.railway.app/"
+  //URL: "https://backend-production-1d85.up.railway.app/"
 
   URL = "https://backend-production-1d85.up.railway.app/proyectos/";
   constructor(private httpClient: HttpClient) { }

@@ -11,7 +11,7 @@ import { persona } from '../Model/persona.model';
 export class PersonaService {
   
   //URL: "http://localhost:8080/", 
-  //URL: "http://backend-production-1d85.up.railway.app/"
+  //URL: "https://backend-production-1d85.up.railway.app/"
 
   URL = "https://backend-production-1d85.up.railway.app/personas/";
   constructor(private httpClient: HttpClient) { }

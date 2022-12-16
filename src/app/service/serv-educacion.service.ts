@@ -10,7 +10,7 @@ import { Educacion } from '../Model/educacion';
 export class ServEducacionService {
   
   //URL: "http://localhost:8080/", 
-  //URL: "http://backend-production-1d85.up.railway.app/"
+  //URL: "https://backend-production-1d85.up.railway.app/"
 
   URL = "https://backend-production-1d85.up.railway.app/educacion/";
   
